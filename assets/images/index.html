@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External Fonts (Lato) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- External Stylesheet (styles.css) -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Title of the Web Page -->
+    <title>BookBarn</title>
+</head>
+
+<body>    
+    <nav id="nav">
+        <div class="navTop">
+            <!-- Logo Section -->
+            <div class="navItem">
+                <img src="./images/logo.png" alt="BookBarn Logo" class="logoImage">
+            </div>
+    
+            <!-- Search Section -->
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search for books" class="searchInput">
+                    <img src="./images/search logo.png" width="20" height="20" alt="Search Icon" class="searchIcon">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigation Menu for Genres -->
+        <div class="navBottom">
+            <h3 class="menuItem">FICTION</h3>
+            <h3 class="menuItem">NON-FICTION</h3>
+            <h3 class="menuItem">COMICS</h3>
+            <h3 class="menuItem">SCIENCE</h3>
+            <h3 class="menuItem">LITERATURE</h3>
+        </div>
+    </nav>
+    
+    <!-- <div class="slider">
+        <div class="sliderWrapper"> -->
+            <!-- Slider Item 1 -->
+            <!-- <div class="sliderItem">
+                <img src="./images/siddhartha.jpeg" alt="Siddhartha" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">FICTION<br>NEW<br>RELEASE</h1>
+                <h2 class="sliderPrice">Ksh 2300</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div> -->
+    
+            <!-- Slider Item 2 -->
+            <!-- <div class="sliderItem">
+                <img src="./images/brave new world.jpeg" alt="Brave New World" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">DYSTOPIAN<br>NEW<br>RELEASE</h1>
+                <h2 class="sliderPrice">Ksh 2500</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div> -->
+    
+            <!-- Slider Item 3 -->
+            <!-- <div class="sliderItem">
+                <img src="./images/maus.jpeg" alt="Maus" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">COMICS<br>NEW<br>RELEASE</h1>
+                <h2 class="sliderPrice">Ksh 950</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+     -->
+            <!-- Slider Item 4 -->
+            <!-- <div class="sliderItem">
+                <img src="./images/origin of species.jpeg" alt="Origin of Species" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">SCIENCE<br>NEW<br>RELEASE</h1>
+                <h2 class="sliderPrice">Ksh 1750</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div> -->
+    
+            <!-- Slider Item 5 -->
+            <!-- <div class="sliderItem">
+                <img src="./images/crime and punishement.jpeg" alt="Crime and Punishment" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">LITERATURE<br>NEW<br>RELEASE</h1>
+                <h2 class="sliderPrice">Ksh 1300</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+        </div>
+    </div> -->
+       
+    <div class="features">
+        <!-- Free Shipping Feature -->
+        <div class="feature">
+            <img src="./images/shipping.png" alt="Free Shipping" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+    
+        <!-- 30 Days Return Feature -->
+        <div class="feature">
+            <img class="featureIcon" src="./images/package return.jpeg" alt="30 Days Return">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No questions return and easy refund in 14 days.</span>
+        </div>
+    
+        <!-- Gift Cards Feature -->
+        <div class="feature">
+            <img class="featureIcon" src="./images/giftcard.jpeg" alt="Gift Cards">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+    
+        <!-- Contact Us Feature -->
+        <div class="feature">
+            <img class="featureIcon" src="./images/contact.png" alt="Contact Us">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>    
+
+    <div class="product" id="product">
+        <!-- Product Image -->
+        <img src="./images/siddhartha.jpeg" alt="Siddhartha Book Cover" class="productImg">
+    
+        <!-- Product Details -->
+        <div class="productDetails">
+            <h1 class="productTitle">FICTION BOOK</h1>
+            <h2 class="productPrice">Ksh 2300</h2>
+            <p class="productDesc">
+                Siddhartha follows a young man’s spiritual journey to enlightenment, exploring different paths in search of true meaning and inner peace.
+            </p>
+    
+            <!-- Author Details -->
+            <div class="authors">
+                <div class="author">Author: Hermann Hesse</div>
+            </div>
+    
+            <!-- Buy Button -->
+            <button class="productButton">BUY NOW!</button>
+        </div>
+    </div>
+    
+    <div class="payment">
+        <!-- Personal Information Section -->
+        <h1 class="payTitle">Personal Information</h1>
+        <label for="name">Name and Surname</label>
+        <input type="text" id="name" placeholder="John Doe" class="payInput">
+    
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="+25471234566" class="payInput">
+    
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Elton St 21 22-145" class="payInput">
+    
+        <!-- Card Information Section -->
+        <h1 class="payTitle">Card Information</h1>
+        <div class="cardIcons">
+            <img src="./images/visa.png" width="40" alt="Visa Logo" class="cardIcon">
+            <img src="./images/mastercard.png" width="40" alt="MasterCard Logo" class="cardIcon">
+        </div>
+    
+        <input type="password" id="cardNumber" class="payInput" placeholder="Card Number">
+    
+        <div class="cardInfo">
+            <input type="text" id="mm" placeholder="MM" class="payInput sm">
+            <input type="text" id="yyyy" placeholder="YYYY" class="payInput sm">
+            <input type="text" id="cvv" placeholder="CVV" class="payInput sm">
+        </div>
+    
+        <!-- Checkout Button -->
+        <button class="payButton">Checkout!</button>
+    
+        <!-- Close Button -->
+        <span class="close">X</span>
+    </div>
+    
+    <div class="gallery">
+        <!-- Gallery Item 1 -->
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Read Anywhere, Anytime!</h1>
+            <img src="./images/bookreaders.jpeg" alt="People reading books anywhere" class="galleryImg">
+        </div>
+    
+        <!-- Gallery Item 2 -->
+        <div class="galleryItem">
+            <img src="./images/new book readers.jpeg" alt="New book readers exploring books" class="galleryImg">
+            <h1 class="galleryTitle">Explore New Worlds</h1>
+        </div>
+    
+        <!-- Gallery Item 3 -->
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Immerse Yourself in Literature</h1>
+            <img src="./images/literatur.jpeg" alt="Reading literature" class="galleryImg">
+        </div>
+    </div>
+    
+    <div class="newSeason">
+        <!-- New Season Item 1 -->
+        <div class="nsItem">
+            <img src="./images/new arrivals.jpeg" alt="New book arrivals" class="nsImg">
+        </div>
+    
+        <!-- New Season Item 2 -->
+        <div class="nsItem">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Books</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR NEXT READ</button>
+            </a>
+        </div>
+    
+        <!-- New Season Item 3 -->
+        <div class="nsItem">
+            <img src="./images/new Arrivals .jpeg" alt="New arrivals collection" class="nsImg">
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footerLeft">
+            <!-- About Us Menu -->
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem"><a href="#company">Company</a></li>
+                    <li class="fListItem"><a href="#contact">Contact</a></li>
+                    <li class="fListItem"><a href="#careers">Careers</a></li>
+                    <li class="fListItem"><a href="#affiliates">Affiliates</a></li>
+                    <li class="fListItem"><a href="#stores">Stores</a></li>
+                </ul>
+            </div>
+    
+            <!-- Useful Links Menu -->
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem"><a href="#support">Support</a></li>
+                    <li class="fListItem"><a href="#refund">Refund</a></li>
+                    <li class="fListItem"><a href="#faq">FAQ</a></li>
+                    <li class="fListItem"><a href="#feedback">Feedback</a></li>
+                    <li class="fListItem"><a href="#stories">Stories</a></li>
+                </ul>
+            </div>
+    
+            <!-- Products Menu -->
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem"><a href="#fiction">Fiction</a></li>
+                    <li class="fListItem"><a href="#nonfiction">Non-Fiction</a></li>
+                    <li class="fListItem"><a href="#comics">Comics</a></li>
+                    <li class="fListItem"><a href="#science">Science</a></li>
+                    <li class="fListItem"><a href="#literature">Literature</a></li>
+                </ul>
+            </div>
+        </div>
+      
+        <div class="footerRight">
+            <!-- Newsletter Subscription -->
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="email" placeholder="your@email.com" class="fInput" aria-label="Email Address">
+                    <button class="fButton" aria-label="Join newsletter">Join!</button>
+                </div>
+            </div>
+        
+            <!-- Social Media Links -->
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Follow us on Instagram">
+                        <img src="./images/instagram.jpeg" alt="Instagram logo" class="fIcon">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Follow us on Facebook">
+                        <img src="./images/facebook.png" alt="Facebook logo" class="fIcon">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Follow us on Twitter">
+                        <img src="./images/twitter.png" alt="Twitter logo" class="fIcon">
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Copyright Notice -->
+            <div class="footerRightMenu">
+                <span class="copyright">© BookBarn. All rights reserved. 2024.</span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+

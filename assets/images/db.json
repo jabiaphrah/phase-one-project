@@ -1,0 +1,40 @@
+{
+    "books": [
+        {
+            "id": "1",
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "price": 10.99,
+            "description": "A novel set in the 1920s about the American dream.",
+            "stock": 5,
+            "image": "https://example.com/gatsby.jpg"
+        },
+        {
+            "id": "2",
+            "title": "1984",
+            "author": "George Orwell",
+            "price": 8.99,
+            "description": "A dystopian novel about totalitarianism.",
+            "stock": 3,
+            "image": "https://example.com/1984.jpg"
+        },
+        {
+            "id": "3",
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "price": 12.99,
+            "description": "A novel about racial injustice in the Deep South.",
+            "stock": 4,
+            "image": "https://example.com/mockingbird.jpg"
+        },
+        {
+            "id": "3",
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "price": 12.99,
+            "description": "A novel about racial injustice in the Deep South.",
+            "stock": 4,
+            "image": "https://example.com/mockingbird.jpg"
+        }
+    ]
+}

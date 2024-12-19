@@ -1,0 +1,254 @@
+{
+  "users": [
+    {
+      "email": "mark@gmail.com",
+      "password": "password123"
+    },
+    {
+      "email": "jane.doe@example.com",
+      "password": "securePassword"
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "price": 1200,
+      "genre": "fiction",
+      "image": "assets/images/images/the great gatsby.jpeg",
+      "condition": "Used",
+      "description": "A classic novel about the American Dream."
+    },
+    {
+      "id": "2",
+      "title": "1984",
+      "author": "George Orwell",
+      "price": 1350,
+      "genre": "fiction",
+      "image": "assets/images/images/1984.jpeg",
+      "condition": "New",
+      "description": "A dystopian novel exploring totalitarianism."
+    },
+    {
+      "id": "3",
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "price": 12300,
+      "genre": "non-fiction",
+      "image": "assets/images/images/sapiens.jpeg",
+      "condition": "New",
+      "description": "A brief history of humankind."
+    },
+    {
+      "id": "4",
+      "title": "Watchmen",
+      "author": "Alan Moore",
+      "price": 1499,
+      "genre": "comic",
+      "image": "assets/images/images/watchmen.jpeg",
+      "condition": "Used",
+      "description": "A graphic novel that deconstructs the superhero genre."
+    },
+    {
+      "id": "5",
+      "title": "The Art of War",
+      "author": "Sun Tzu",
+      "price": 550,
+      "genre": "non-fiction",
+      "image": "assets/images/images/art of war.jpeg",
+      "condition": "Used",
+      "description": "A classic treatise on military strategy."
+    },
+    {
+      "id": "6",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "price": 950,
+      "genre": "fiction",
+      "image": "assets/images/images/to kill a mocking bird.png",
+      "condition": "New",
+      "description": "A novel about racial injustice in the Deep South."
+    },
+    {
+      "id": "7",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": 1000,
+      "genre": "fiction",
+      "image": "assets/images/images/pride and prejudice.jpeg",
+      "condition": "New",
+      "description": "A classic novel about love and social standing."
+    },
+    {
+      "id": "8",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "price": 1500,
+      "genre": "fiction",
+      "image": "assets/images/images/the cathcer in the rye.jpeg",
+      "condition": "Used",
+      "description": "The experiences of Holden Caulfield, a teenager in New York City."
+    },
+    {
+      "id": "9",
+      "title": "Educated",
+      "author": "Tara Westover",
+      "price": 1725,
+      "genre": "non-fiction",
+      "image": "assets/images/images/educated.jpeg",
+      "condition": "Used",
+      "description": "A memoir about growing up in a strict and abusive household."
+    },
+    {
+      "id": "10",
+      "title": "Becoming",
+      "author": "Michelle Obama",
+      "price": 2500,
+      "genre": "non-fiction",
+      "image": "assets/images/images/becoming.jpeg",
+      "condition": "New",
+      "description": "The memoir of former First Lady Michelle Obama."
+    },
+    {
+      "id": "11",
+      "title": "Batman: Year One",
+      "author": "Frank Miller",
+      "price": 2350,
+      "genre": "comic",
+      "image": "assets/images/images/batman year one.jpeg",
+      "condition": "New",
+      "description": "The origin story of Batman's first year as a vigilante."
+    },
+    {
+      "id": "12",
+      "title": "Spider-Man: Blue",
+      "author": "Jeph Loeb",
+      "price": 1260,
+      "genre": "comic",
+      "image": "assets/images/images/spiderman blue.jpeg",
+      "condition": "Used",
+      "description": "A heartfelt story about Spider-Man reflecting on his love for Gwen Stacy."
+    },
+    {
+      "id": "13",
+      "title": "X-Men: Days of Future Past",
+      "author": "Chris Claremont",
+      "price": 1700,
+      "genre": "comic",
+      "image": "assets/images/images/xmen .jpeg",
+      "condition": "New",
+      "description": "A time-travel story to save the future of mutants."
+    },
+    {
+      "id": "14",
+      "title": "A Brief History of Time",
+      "author": "Stephen Hawking",
+      "price": 1050,
+      "genre": "science",
+      "image": "assets/images/images/brief history of time.jpeg",
+      "condition": "Used",
+      "description": "A book about cosmology, black holes, and the universe."
+    },
+    {
+      "id": "15",
+      "title": "The Selfish Gene",
+      "author": "Richard Dawkins",
+      "price": 750,
+      "genre": "science",
+      "image": "assets/images/images/selfish gene.jpeg",
+      "condition": "New",
+      "description": "An exploration of evolution from a gene's point of view."
+    },
+    {
+      "id": "16",
+      "title": "Cosmos",
+      "author": "Carl Sagan",
+      "price": 1499,
+      "genre": "science",
+      "image": "assets/images/images/cosmos.jpeg",
+      "condition": "Used",
+      "description": "A science book exploring the wonders of the universe."
+    },
+    {
+      "id": "17",
+      "title": "The Martian",
+      "author": "Andy Weir",
+      "price": 1600,
+      "genre": "science",
+      "image": "assets/images/images/the martian.jpeg",
+      "condition": "New",
+      "description": "A science fiction novel about an astronaut stranded on Mars."
+    },
+    {
+      "id": "18",
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "price": 2050,
+      "genre": "literature",
+      "image": "assets/images/images/war and peace.jpeg",
+      "condition": "Used",
+      "description": "A historical novel set during the Napoleonic Wars."
+    },
+    {
+      "id": "19",
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "price": 1625,
+      "genre": "literature",
+      "image": "assets/images/images/moby dick.jpeg",
+      "condition": "New",
+      "description": "The epic tale of a sea captain's obsession with a whale."
+    },
+    {
+      "id": "20",
+      "title": "The Odyssey",
+      "author": "Homer",
+      "price": 1399,
+      "genre": "literature",
+      "image": "assets/images/images/the odyssey.jpeg",
+      "condition": "Used",
+      "description": "An ancient Greek epic poem about Odysseus' journey home."
+    },
+    {
+      "id": "21",
+      "title": "Jane Eyre",
+      "author": "assets/images/images/jane eyere.jpeg",
+      "price": 1200,
+      "genre": "literature",
+      "image": "assets/images/images/jane eyere.jpeg",
+      "condition": "New",
+      "description": "A classic tale of love, struggle, and self-discovery."
+    },
+    {
+      "id": "2fd5",
+      "title": "middle sex",
+      "author": "jeffrey eugenides",
+      "price": "2300",
+      "image": "assets/images/images/middlesex.jpeg",
+      "genre": "fiction",
+      "condition": "New",
+      "description": "good for you"
+    },
+    {
+      "id": "9366",
+      "title": "Things Fall Apart (1958)",
+      "author": "Chinua Achebe",
+      "price": "2000",
+      "image": "assets/images/images/things falling apart.jpeg",
+      "genre": "fiction",
+      "condition": "New",
+      "description": "This is Achebe's most famous work, set in the late 19th century. It tells the story of Okonkwo, an Igbo man, and his struggle against colonialism and changing traditions. The novel explores themes of cultural clash, colonialism, and the personal consequences of societal change."
+    },
+    {
+      "id": "7e0a",
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "price": "3000",
+      "image": "assets/images/images/the brothers of karamazov.jpeg",
+      "genre": "literature",
+      "condition": "New",
+      "description": "A philosophical novel that delves into themes of faith, free will, and morality, centered around a family of three brothers."
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBarn - Browse Books</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">BookBarn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-link" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                    </li>
+                    <li class="nav-item">
+                     <!-- Add Book Button -->
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addBookModal">Add Book</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Add Book Modal -->
+        <div class="modal fade" id="addBookModal" tabindex="-1" aria-labelledby="addBookModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addBookModalLabel">Add a Book</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Add Book Form -->
+                        <form id="addBookForm">
+                            <div class="mb-3">
+                                <label for="bookTitle" class="form-label">Title</label>
+                                <input type="text" class="form-control" id="bookTitle" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bookAuthor" class="form-label">Author</label>
+                                <input type="text" class="form-control" id="bookAuthor" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bookPrice" class="form-label">Price</label>
+                                <input type="number" class="form-control" id="bookPrice" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bookImage" class="form-label">Image</label>
+                                <input type="text" class="form-control" id="bookImage" required placeholder="Enter image URL">
+                            </div>
+                            <div class="mb-3">
+                                <label for="bookGenre" class="form-label">Genre</label>
+                                <select class="form-select" id="bookGenre" required>
+                                    <option value="">Select Genre</option>
+                                    <option value="fiction">Fiction</option>
+                                    <option value="non-fiction">Non-Fiction</option>
+                                    <option value="science">Science</option>
+                                    <option value="literature">Literature</option>
+                                    <option value="comic">Comic</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bookCondition" class="form-label">Condition</label>
+                                <select class="form-select" id="bookCondition" required>
+                                    <option value="New">New</option>
+                                    <option value="Used">Used</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bookDescription" class="form-label">Description</label>
+                                <textarea class="form-control" id="bookDescription" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Book</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="my-4">Browse Books</h2>
+
+        <!-- Search and Filter Section -->
+<div class="row">
+    <div class="col-md-4">
+        <input type="text" class="form-control" id="searchBar" placeholder="Search for books...">
+    </div>
+    <div class="col-md-4">
+        <select class="form-select" id="genreFilter">
+            <option value="">Select Genre</option>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="science">Science</option>
+            <option value="literature">Literature</option>
+            <option value="comic">Comic</option>
+        </select>
+    </div>
+</div>
+        <div class="row mt-4" id="bookList">
+            <!-- Books will be dynamically inserted here -->
+        </div>
+
+  <!-- Modal for Book Details -->
+<div class="modal fade" id="bookDetailsModal" tabindex="-1" aria-labelledby="bookDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bookDetailsModalLabel">Book Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="bookImageWrapper" class="text-center mb-3">
+                    <img id="bookImage" src="" alt="Book Image" class="img-fluid" style="max-height: 400px;">
+                </div>
+                <p><strong>Title:</strong> <span id="bookTitle"></span></p>
+                <p><strong>Author:</strong> <span id="bookAuthor"></span></p>
+                <p><strong>Description:</strong> <span id="bookDescription"></span></p>
+                <p><strong>Price:</strong> Ksh <span id="bookPrice"></span></p>
+                <p><strong>Condition:</strong> <span id="bookCondition"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="addToCartBtn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Modal for Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="loginEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="loginPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Register -->
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registerForm">
+                            <div class="mb-3">
+                                <label for="registerEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="registerEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="registerPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="registerPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
